@@ -83,15 +83,15 @@ void tampilkanBuku() {
         }
         fclose(file);
 
-       
+        cout << "-------------------------------------------------------\n";
         cout << "ID   | Judul Buku           | Penulis       | Stok \n";
-      
+        cout << "-------------------------------------------------------\n";
         curr = temp;
         while (curr) {
             cout << curr->id << "  | " << curr->judul << " | " << curr->penulis << " | " << curr->stok << "\n";
             curr = curr->next;
         }
-       
+        cout << "-------------------------------------------------------\n";
     } while (!kembaliKeMenu());
 }
 
